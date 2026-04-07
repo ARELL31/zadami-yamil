@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadami Yamil Téllez Silva | Psicólogo</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            500: '#64748b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #334155;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffffff; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-slate-200 selection:text-slate-900">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-slate-100 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#inicio" class="text-xl font-semibold tracking-tight text-slate-900">Z. Yamil</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#perfil" class="hover:text-slate-900 transition-colors">Perfil</a>
+                <a href="#experiencia" class="hover:text-slate-900 transition-colors">Trayectoria</a>
+                <a href="#contacto" class="hover:text-slate-900 transition-colors">Contacto</a>
+            </div>
+            <!-- Mobile Menu Icon (Visual only) -->
+            <button class="md:hidden text-slate-600">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs font-medium text-slate-600">
+                <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                <span>Investigación y Práctica Clínica</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight tracking-tight">
+                Zadami Yamil <br/>
+                <span class="text-slate-400">Téllez Silva</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
+                Licenciado en Psicología especializado en el análisis cuantitativo, el estudio de la autoimagen y la investigación basada en evidencia.
+            </p>
+            <div class="flex gap-4 pt-4">
+                <a href="#contacto" class="px-6 py-3 bg-slate-900 text-white rounded-lg text-sm font-medium hover:bg-slate-800 transition-colors shadow-sm">
+                    Contactar
+                </a>
+                <a href="#experiencia" class="px-6 py-3 bg-white text-slate-700 border border-slate-200 rounded-lg text-sm font-medium hover:bg-slate-50 transition-colors">
+                    Ver currículum
+                </a>
+            </div>
+        </div>
+        <div class="w-48 h-48 md:w-72 md:h-72 rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 shadow-sm flex-shrink-0 flex items-center justify-center relative">
+            <!-- Placeholder for profile picture -->
+            <i data-lucide="user" class="w-20 h-20 text-slate-300"></i>
+            <span class="absolute bottom-4 text-xs text-slate-400 font-medium">Foto de perfil</span>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="perfil" class="py-20 px-6 border-t border-slate-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                
+                <!-- Main Profile Text -->
+                <div class="md:col-span-2 space-y-6">
+                    <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                        <i data-lucide="brain" class="w-6 h-6 text-slate-400"></i>
+                        Perfil Profesional
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        Licenciado en Psicología con sólida formación teórica y metodológica. Especializado en el análisis cuantitativo de datos y el estudio de la autoimagen, sesgos cognitivos y trastornos de la conducta alimentaria (Dismorfia Muscular).
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        Orientado a la investigación basada en evidencia y al análisis de fenómenos psicosociales. Capacidad demostrada para manejar bases de datos, interpretar modelos estadísticos complejos y traducir hallazgos en aplicaciones prácticas para la salud pública e intervenciones psicológicas.
+                    </p>
+                </div>
+
+                <!-- Personal Info Sidebar -->
+                <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm h-fit">
+                    <h3 class="text-sm font-bold tracking-wider text-slate-900 uppercase mb-4">Datos Personales</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between items-center border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Nacimiento</span>
+                            <span class="font-medium text-slate-800 text-right">28 de agosto, 2000</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Edad</span>
+                            <span class="font-medium text-slate-800">25 años</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-slate-100 pb-2">
+                            <span class="text-slate-500">Estado Civil</span>
+                            <span class="font-medium text-slate-800">Soltero</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education (Curriculum) -->
+    <section id="experiencia" class="py-20 px-6 border-t border-slate-100 bg-white">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+            
+            <!-- Education Column -->
+            <div>
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2 mb-8">
+                    <i data-lucide="graduation-cap" class="w-6 h-6 text-slate-400"></i>
+                    Educación
+                </h2>
+                
+                <div class="space-y-8 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-slate-100">
+                    
+                    <!-- Item 1 -->
+                    <div class="relative flex items-start justify-between">
+                        <div class="absolute left-0 h-4 w-4 rounded-full bg-white border-2 border-slate-300 mt-1.5 -ml-2.5 shadow-sm"></div>
+                        <div class="pl-6 w-full">
+                            <span class="text-xs font-semibold tracking-wide text-slate-400 uppercase">2021 – 2026</span>
+                            <h3 class="text-lg font-bold text-slate-900 mt-1">Licenciatura en Psicología</h3>
+                            <p class="text-slate-600 mt-1 text-sm">Universidad Nacional Autónoma de México (UNAM)<br>Facultad de Psicología (SUAyED)</p>
+                            
+                            <div class="mt-4 p-4 bg-slate-50 rounded-lg border border-slate-100">
+                                <span class="text-xs font-bold text-slate-500 uppercase mb-1 block">Titulación por Tesis</span>
+                                <p class="text-sm text-slate-700 italic">"Cuerpo Masculino y Percepción Distorsionada: Cómo el Sesgo de Peso Influye en la Autoimagen."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative flex items-start justify-between">
+                        <div class="absolute left-0 h-4 w-4 rounded-full bg-white border-2 border-slate-300 mt-1.5 -ml-2.5 shadow-sm"></div>
+                        <div class="pl-6 w-full">
+                            <span class="text-xs font-semibold tracking-wide text-slate-400 uppercase">2016 – 2020</span>
+                            <h3 class="text-lg font-bold text-slate-900 mt-1">Escuela Nacional Preparatoria #8</h3>
+                            <p class="text-slate-600 mt-1 text-sm">"Miguel E. Schulz", UNAM</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Experience Column -->
+            <div>
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-2 mb-8">
+                    <i data-lucide="briefcase" class="w-6 h-6 text-slate-400"></i>
+                    Experiencia Laboral
+                </h2>
+
+                <div class="space-y-8 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-slate-100">
+                    
+                    <!-- Item 1 -->
+                    <div class="relative flex items-start justify-between">
+                        <div class="absolute left-0 h-4 w-4 rounded-full bg-white border-2 border-slate-300 mt-1.5 -ml-2.5 shadow-sm"></div>
+                        <div class="pl-6 w-full">
+                            <span class="text-xs font-semibold tracking-wide text-slate-400 uppercase">Enero 2022 – Diciembre 2022</span>
+                            <h3 class="text-lg font-bold text-slate-900 mt-1">Asistente en Consultorio Psicológico</h3>
+                            <p class="text-slate-600 mt-1 text-sm">Apoyo administrativo y operativo en consultorio particular de psicología, garantizando la atención y seguimiento de pacientes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative flex items-start justify-between">
+                        <div class="absolute left-0 h-4 w-4 rounded-full bg-white border-2 border-slate-300 mt-1.5 -ml-2.5 shadow-sm"></div>
+                        <div class="pl-6 w-full">
+                            <span class="text-xs font-semibold tracking-wide text-slate-400 uppercase">Enero 2019 – Julio 2019</span>
+                            <h3 class="text-lg font-bold text-slate-900 mt-1">Ejecutivo de Ventas</h3>
+                            <p class="text-slate-600 mt-1 text-sm">Grupo Eulen (Campaña Izzi). Atención al cliente y estrategias de venta directa de servicios de telecomunicaciones.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 px-6 border-t border-slate-100 pb-32">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Contacto</h2>
+            <p class="text-slate-500 mb-10 max-w-xl mx-auto">Si deseas ponerte en contacto para motivos laborales, académicos o consultas, no dudes en utilizar los siguientes medios.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Phone -->
+                <a href="tel:5564994754" class="group p-6 bg-white border border-slate-200 hover:border-slate-300 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col items-center gap-3">
+                    <div class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-slate-100 transition-colors">
+                        <i data-lucide="phone" class="w-5 h-5 text-slate-600"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-400 uppercase">Teléfono</p>
+                        <p class="text-sm font-medium text-slate-800 mt-1">55 6499 4754</p>
+                    </div>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:zadamiyamil@gmail.com" class="group p-6 bg-white border border-slate-200 hover:border-slate-300 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col items-center gap-3">
+                    <div class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-slate-100 transition-colors">
+                        <i data-lucide="mail" class="w-5 h-5 text-slate-600"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-400 uppercase">Correo</p>
+                        <p class="text-sm font-medium text-slate-800 mt-1 break-all">zadamiyamil<br>@gmail.com</p>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/zadami-yamil-téllez-silva-a0177921b" target="_blank" rel="noopener noreferrer" class="group p-6 bg-white border border-slate-200 hover:border-slate-300 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col items-center gap-3">
+                    <div class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-slate-100 transition-colors">
+                        <i data-lucide="linkedin" class="w-5 h-5 text-slate-600"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-400 uppercase">LinkedIn</p>
+                        <p class="text-sm font-medium text-slate-800 mt-1">Conectar</p>
+                    </div>
+                </a>
+
+                <!-- Address -->
+                <div class="group p-6 bg-white border border-slate-200 rounded-xl shadow-sm flex flex-col items-center gap-3 sm:col-span-2 lg:col-span-1">
+                    <div class="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-slate-600"></i>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs font-semibold text-slate-400 uppercase">Ubicación</p>
+                        <p class="text-xs font-medium text-slate-800 mt-1 leading-relaxed">Rufino Blanco Fombona 2524,<br>Col. Iztaccihuatl, Benito Juárez,<br>CDMX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-50 border-t border-slate-200 text-center">
+        <p class="text-sm text-slate-500">
+            &copy; 2026 Zadami Yamil Téllez Silva. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
